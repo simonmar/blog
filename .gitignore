@@ -1,0 +1,7 @@
+*~
+*.o
+*.hi
+_site
+.stack-work
+_cache
+site

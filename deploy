@@ -1,0 +1,6 @@
+#!/bin/sh
+
+stack build
+SITE=`echo .stack-work/install/*/*/*/bin/site`
+./site build
+rsync -av _site/* ../simonmar.github.io/
