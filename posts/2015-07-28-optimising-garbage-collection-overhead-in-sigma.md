@@ -215,7 +215,7 @@ during this GC cycle.  The scheme is made a little more complicated by
 two other things: there might be objects that appear that we have never
 seen before (due to runtime linking), and there might be objects that
 are unconditionally alive for other reasons (which is what the values
-0 and 1 are reserved for).
+0 and 3 are reserved for).
 
 Here's the <a href="https://phabricator.haskell.org/D1076">patch</a>.
 At the time of writing, I had to back it out because it
