@@ -25,8 +25,21 @@ main = hakyll $ do
         route $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
+            -- Used by the RSS/Atom feed
+            >>= saveSnapshot "content"
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
+
+    -- http://jaspervdj.be/hakyll/tutorials/05-snapshots-feeds.html
+    let rss name render' =
+          create [name] $ do
+              route idRoute
+              compile $ do
+                  let feedCtx = postCtx `mappend` bodyField "description"
+                  posts <- fmap (take 10) . recentFirst =<< loadAllSnapshots "posts/*" "content"
+                  render' feedConfiguration feedCtx posts
+
+    rss "atom.xml" renderAtom
 
     create ["archive.html"] $ do
         route idRoute
@@ -70,3 +83,12 @@ allContext =
    field "baseurl" (\_ -> return "") `mappend`
    dateField "date" "%B %e, %Y" `mappend`
    defaultContext
+
+feedConfiguration :: FeedConfiguration
+feedConfiguration = FeedConfiguration
+   { feedTitle       = "Simon Marlow"
+   , feedDescription = ""
+   , feedAuthorName  = "Simon Marlow"
+   , feedAuthorEmail = "marlowsd@gmail.com"
+   , feedRoot        = "https://simonmar.github.io"
+   }
