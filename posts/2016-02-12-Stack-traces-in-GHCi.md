@@ -271,7 +271,7 @@ subsumed by any of the others (sadly!).  I'll try to summarise:
 
     But:
 
-    * Requires explicit code changes to propagate the stack Has
+    * Requires explicit code changes to propagate the stack
     * Some runtime overhead (stacks get constructed and passed around at
       runtime)
     * Shows up in types as `HasCallStack` constraints
