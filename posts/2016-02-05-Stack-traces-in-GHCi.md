@@ -9,7 +9,7 @@ tags: [ghc]
 **tl;dr**
 
 In the upcoming GHC 8.0.1 release, if you start GHCi with `ghci
--fexternal-interprter -prof` (any packages you use must be built for
+-fexternal-interpreter -prof` (any packages you use must be built for
 profiling), then you get access to detailed stack traces for all the
 code you load into GHCi.  Stack traces can be accessed via `assert`,
 `error`, <a
@@ -28,13 +28,13 @@ worked on is just loaded on the fly into GHCi during development and
 run with the interpreter.  This works surprisingly well even for large
 codebases like ours, especially if you enable parallel compilation and
 use a bigger heap (e.g. `ghci -j8 +RTS -A128m`).  This is a pretty
-smooth setup: right inside GHCi we can run production code against
+smooth setup: right inside GHCi we can test the production code against
 real data, and interact with all of the services that our production
 systems talk to, while having a nice interactive edit/compile/test
 cycle.
 
 However, one thing is missed by many developers, especially those
-coming from other languages: easy access to a stack trace when
+coming from other languages: easy access to a **stack trace** when
 debugging.  So, towards the end of last year, I set about finding a
 workable solution that we could deploy to our users without impacting
 their workflows.
@@ -50,7 +50,7 @@ $ ghci -fexternal-interpreter -prof
 and you have stack traces on, by default, for all the code you load
 into ghci.  Let's try an example.
 
-```
+```haskell
 import Control.Exception
 
 myTail xs = assert (not (null xs)) $ tail xs
@@ -247,12 +247,22 @@ interpreter process.
 There's a lot happening on the stack trace front.  We now have no less
 than three ways to get a stack trace:
 
-* ImplicitParams
-* Profiling, and `ghci -fexternal-interprter`
+* Profiling: `ghc -prof -fprof-auto` and `ghci -fexternal-interprter -prof`
+* ImplicitParams, with the magic `?callStack :: CallStack` constraint (now called `HasCallStack`).
 * DWARF: `ghc -g`
 
 Each of these has advantages and disadvantages, and none of them are
 subsumed by any of the others (sadly!).  I'll try to summarise:
+
+*  **Profiling**
+
+    * Detailed, dynamic, call stacks
+
+    But:
+
+    * Requires recompiling your code, or loading it into GHCi
+    * 2-3x runtime overhead compiled, 20-40x interpreted
+    * Not so great for `error` and `undefined` right now
 
 *   **ImplicitParams**
 
@@ -261,35 +271,42 @@ subsumed by any of the others (sadly!).  I'll try to summarise:
 
     But:
 
-    * Requires explicit code changes to propagate the stack
-    * Has runtime overhead (stacks get constructed and passed around at runtime)
+    * Requires explicit code changes to propagate the stack Has
+    * Some runtime overhead (stacks get constructed and passed around at
+      runtime)
     * Shows up in types as `HasCallStack` constraints
-    * Lexical, not dynamic.
+    * Lexical, not dynamic. (In `g = map f`, `g` calls `f` rather than
+      `map` calling `f`)
 
-*  **Profiling**
-
-    * Detailed dynamic call stacks
-
-    But:
-
-    * Requires recompiling your code, or loading it into GHCi
-    * 2-3x runtime overhead compiled, 20-40x interpreted
-    * Not so great for `error` and `undefined` right now
+    Could you change GHC so that it autoamtically adds `HasCallStack`
+    constraints everywhere and also hides them from the user, to get
+    the effect of full call-stack coverage?  Maybe - that would be an
+    alternative to the scheme I've implemented on top of profiling.
+    One difficult area is CAFs, though. If a constraint is added to a
+    CAF, then the CAF is re-evaluated each time it is called, which is
+    obviously undesirable.  The profiler goes to some lengths to avoid
+    changing the asymptotic cost of things, but trades off some information in
+    the stack simulation in the process, which is why calls to `error`
+    sometimes don't get accurate call stack information.
 
 * **DWARF**
 
-    * No runtime overhead, can be deployed in production
+    * No runtime overhead, can be deployed in production.
+    * Good when you're not willing to sacrifice any performance, but
+      having some information is better than none when something goes
+      wrong.
 
     But:
 
-    * Raw execution stacks, we lose information due to tail-calls and
-      lazy evaluation
+    * Gives the raw execution stack, so we lose information due to
+      tail-calls and lazy evaluation.
 
 
 ## Conclusion
 
-Remote GHCi is not the default in GHC 8.0.1, but it's available with
-the flag `-fexternal-interpreter`.  This week I deployed it to our
-Haxl users at Facebook and so far it seems to be working well.
+We now have full stack traces inside GHCi, provided you compile your
+packages for profiling, and use `ghci -fexternal-interpreter -prof`.
 
-Please try it out and let me know how you get on!
+Remote GHCi is not the default in GHC 8.0.1, but it's available with
+the flag `-fexternal-interpreter`.  Please try it out and let me know
+how you get on!
