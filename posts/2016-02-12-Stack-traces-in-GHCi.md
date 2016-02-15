@@ -278,7 +278,7 @@ subsumed by any of the others (sadly!).  I'll try to summarise:
     * Lexical, not dynamic. (In `g = map f`, `g` calls `f` rather than
       `map` calling `f`)
 
-    Could you change GHC so that it autoamtically adds `HasCallStack`
+    Could you change GHC so that it automatically adds `HasCallStack`
     constraints everywhere and also hides them from the user, to get
     the effect of full call-stack coverage?  Maybe - that would be an
     alternative to the scheme I've implemented on top of profiling.
