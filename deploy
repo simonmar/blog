@@ -2,5 +2,5 @@
 
 stack build
 SITE=`echo .stack-work/install/*/*/*/bin/site`
-$SITE build
+stack exec site build
 rsync -av _site/* ../simonmar.github.io/
