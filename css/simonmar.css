@@ -1,0 +1,14 @@
+.quote {
+    font-style: italic;
+    color: #606060;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 4ex;
+}
+
+.attribution {
+    margin-top: 1ex;
+    margin-left: 3em;
+    font-style: normal;
+    color: #000000;
+}
