@@ -1,6 +1,8 @@
 #!/bin/sh
 
-stack build
-SITE=`echo .stack-work/install/*/*/*/bin/site`
-$SITE build
+#stack build
+#SITE=`echo .stack-work/install/*/*/*/bin/site`
+#SITE=./dist/build/site/site
+#$SITE build
+stack exec site -- rebuild
 rsync -av _site/* ../simonmar.github.io/
