@@ -5,6 +5,12 @@ description: ""
 category: publications
 tags: []
 ---
+**<a href="http://simonmar.github.io/bib/papers/applicativedo.pdf">Desugaring Haskell's Do-notation into Applicative Operations</a>** (Simon Marlow, Simon Peyton Jones, Edward Kmett, Andrey Mokhov) *Proceedings of the 9th International Symposium on Haskell*, pages 92--104, Nara, Japan, ACM, 2016
+<a href="applicativedo-2016_abstract.html">Abstract</a> <a href="applicativedo-2016.bib">BibTeX</a>
+                                                                                                   
+**<a href="http://simonmar.github.io/bib/papers/composable_scheduler_activations.pdf">Composable scheduler activations for Haskell</a>** (K. C. Sivaramakrishnan, Tim Harris, Simon Marlow, Simon Peyton Jones) *Journal of Functional Programming*, 26, pages e9 (39 pages), 2016
+<a href="composable_scheduler_activations-2016_abstract.html">Abstract</a> <a href="composable_scheduler_activations-2016.bib">BibTeX</a>
+                                                                                                                                         
 **<a href="http://simonmar.github.io/bib/papers/haxl-icfp14.pdf">There is No Fork: An Abstraction for Efficient, Concurrent, and Concise Data Access</a>** (Simon Marlow, Louis Brandy, Jonathan Coens, Jon Purdy) *Proceedings of the 19th ACM SIGPLAN International Conference on Functional Programming*, pages 325--337, Gothenburg, Sweden, ACM, 2014
 <a href="nofork-2014_abstract.html">Abstract</a> <a href="nofork-2014.bib">BibTeX</a>
                                                                                      

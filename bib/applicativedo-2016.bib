@@ -1,0 +1,24 @@
+@InProceedings{applicativedo-2016,
+   author = {Simon Marlow and Simon Peyton Jones and Edward Kmett and Andrey Mokhov},
+   title = {Desugaring Haskell's Do-notation into Applicative Operations},
+   booktitle = {Proceedings of the 9th International Symposium on Haskell},
+   year = {2016},
+   abstract = {Monads have taken the world by storm, and are supported by
+do-notation (at least in Haskell).  Programmers are increasingly
+waking up to the usefulness and ubiquity of Applicatives, but they
+have so far been hampered by the absence of supporting notation.  In
+this paper we show how to re-use the very same do-notation to work
+for Applicatives as well, providing efficiency benefits for some types
+that are both Monad and Applicative, and syntactic convenience for
+those that are merely Applicative.  The result is fully implemented
+as an optional extension in GHC, and is in use at Facebook to make
+it easy to write highly-parallel queries in a distributed system.
+},
+   url = {http://simonmar.github.io/bib/papers/applicativedo.pdf},
+   doi = {10.1145/2976002.2976007},
+   isbn = {978-1-4503-4434-0},
+   pages = {92--104},
+   location = {Nara, Japan},
+   publisher = {ACM},
+   series = {Haskell 2016}
+}
