@@ -1,0 +1,28 @@
+@Unpublished{concsubstrate07,
+   author = {Peng Li and Simon Marlow and Simon {Peyton Jones} and Andrew Tolmach},
+   title = {Lightweight concurrency primitives for GHC},
+   year = {2007},
+   month = {June},
+   abstract = {The Glasgow Haskell Compiler (GHC) has quite sophisticated support
+for concurrency in its runtime system, which is written in low-level
+C code.  As GHC evolves, the runtime system becomes increasingly
+complex, error-prone, difficult to maintain and difficult to add new
+concurrency features.
+
+This paper presents an alternative approach to implement concurrency
+in GHC.  Rather than hard-wiring all kinds of concurrency features,
+the runtime system is a thin substrate providing only a small set of
+concurrency primitives, and the rest of concurrency features are
+implemented in software libraries written in Haskell.  This design
+improves the safety of concurrency support; it also provides more
+customizability of concurrency features, as new concurrency features
+can be developed as Haskell library packages and deployed modularly.
+},
+   url = {http://simonmar.github.io/bib/papers/conc-substrate.pdf},
+   doi = {{http://doi.acm.org/10.1145/1291201.1291217}},
+   isbn = {{978-1-59593-674-5}},
+   pages = {{107--118}},
+   location = {{Freiburg, Germany}},
+   publisher = {{ACM}},
+   note = {Haskell '07: Proceedings of the ACM SIGPLAN workshop on Haskell workshop}
+}

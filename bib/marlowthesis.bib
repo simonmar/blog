@@ -1,0 +1,43 @@
+@PhdThesis{marlowthesis,
+   author = {Simon Marlow},
+   title = {Deforestation for Higher-Order Functional Programs},
+   year = {1996},
+   abstract = {Functional programming languages are an ideal medium for program
+optimisations based on source-to-source transformation techniques.
+Referential transparency affords opportunities for a wide range of
+correctness-preserving transformations leading to potent optimisation
+strategies.
+
+This thesis builds on deforestation, a program transformation
+technique due to Wadler that removes intermediate data structures from
+first-order functional programs.
+
+Our contribution is to reformulate deforestation for higher-order
+functional programming languages, and to show that the resulting
+algorithm terminates given certain syntactic and typing constraints on
+the input.  These constraints are entirely reasonable, indeed it is
+possible to translate any typed program into the required syntactic
+form.  We show how this translation can be performed automatically and
+optimally.
+
+The higher-order deforestation algorithm is {\em transparent}.  That
+is, it is possible to determine by examination of the source program
+where the optimisation will be applicable.
+
+We also investigate the relationship of deforestation to
+cut-elimination, the normalisation property for the logic of sequent
+calculus.  By combining a cut-elimination algorithm and first-order
+deforestation, we derive an improved higher-order deforestation
+algorithm.
+
+The higher-order deforestation algorithm has been implemented in the
+Glasgow Haskell Compiler.  We describe how deforestation fits into the
+framework of Haskell, and design a model for the implementation that
+allows automatic list removal, with additional deforestation being
+performed on the basis of programmer supplied annotations.  Results
+from applying the deforestation implementation to several example
+Haskell programs are given.
+
+},
+   school = {University of Glasgow}
+}

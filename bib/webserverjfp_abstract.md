@@ -1,0 +1,22 @@
+---
+layout: page
+title: '<a href="http://simonmar.github.io/bib/papers/web-server-jfp.pdf">Developing a high-performance web server in {C}oncurrent {H}askell</a>'
+description: ""
+category: publications
+tags: []
+---
+(Simon Marlow) *Journal of Functional Programming*, 12(4+5):359--374, July 2002 <a href="webserverjfp.bib">BibTeX</a>
+
+Server applications, and in particular network-based server
+applications, place a unique combination of demands on a programming
+language: lightweight concurrency, high I/O throughput, and fault
+tolerance are all important.
+
+This paper describes a prototype web server written in Concurrent
+Haskell (with extensions), and presents two useful results: firstly, a
+conforming server could be written with minimal effort, leading to an
+implementation in less than 1500 lines of code, and secondly the naive
+implementation produced reasonable performance.  Furthermore, making
+minor modifications to a few time-critical components improved
+performance to a level acceptable for anything but the most heavily
+loaded web servers.

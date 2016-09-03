@@ -1,0 +1,31 @@
+---
+layout: page
+title: '<a href="http://simonmar.github.io/bib/papers/strategies.pdf">Seq no more: Better Strategies for Parallel {H}askell</a>'
+description: ""
+category: publications
+tags: []
+---
+(Simon Marlow, Patrick Maier, Hans-Wolfgang Loidl, Mustafa K Aswad, Phil Trinder) *Haskell '10: Proceedings of the Third ACM SIGPLAN Symposium on Haskell*, Baltimore, USA, ACM, 2010 <a href="strategies-2010.bib">BibTeX</a>
+
+We present a complete redesign of Evaluation Strategies, a key
+abstraction for specifying pure, deterministic parallelism in Haskell.
+Our new formulation preserves the compositionality and modularity
+benefits of the original, while providing significant new benefits.
+First, we introduce an evaluation-order monad to provide clearer, more
+generic, and more efficient specification of parallel evaluation.
+Secondly, the new formulation resolves a subtle space management issue
+with the original strategies, allowing parallelism (sparks) to be
+preserved while reclaiming heap associated with superfluous
+parallelism.  Related to this, the new formulation provides far better
+support for speculative parallelism as the garbage collector now
+prunes unneeded speculation.  Finally, the new formulation provides
+improved compositionality: we can directly express parallelism
+embedded within lazy data structures, producing more compositional
+strategies, and our basic strategies are parametric in the
+coordination combinator, facilitating a richer set of parallelism
+combinators.
+
+We give measurements over a range of benchmarks demonstrating that the
+runtime overheads of the new formulation relative to the original are
+low, and the new strategies even yield slightly better speedups on
+average than the original strategies.

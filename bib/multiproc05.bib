@@ -1,0 +1,24 @@
+@InProceedings{multiproc05,
+   author = {Tim Harris and Simon Marlow and Simon {Peyton Jones}},
+   title = {{H}askell on a Shared-Memory Multiprocessor},
+   booktitle = {Haskell '05: Proceedings of the 2005 ACM SIGPLAN workshop on Haskell},
+   year = {2005},
+   month = {September},
+   abstract = {Multi-core processors are coming, and we need ways to program them.
+The combination of purely-functional programming and explicit, monadic threads,
+communicating using transactional memory, looks like a particularly promising
+way to do so.  This paper describes a full-scale implementation of shared-memory
+parallel Haskell, based on the Glasgow Haskell Compiler.  Our main technical 
+contribution is a lock-free mechanism for evaluating shared thunks that eliminates
+the major performance bottleneck in parallel evaluation of a lazy language.
+Our results are preliminary but promising: we can demonstrate wall-clock speedups 
+of a serious application (GHC itself), even with only two processors, compared
+to the same application compiled for a uni-processor.
+},
+   url = {http://simonmar.github.io/bib/papers/multiproc.pdf},
+   doi = {http://doi.acm.org/10.1145/1088348.1088354},
+   isbn = {1-59593-071-X},
+   pages = {49--61},
+   location = {Tallinn, Estonia},
+   publisher = {ACM Press}
+}

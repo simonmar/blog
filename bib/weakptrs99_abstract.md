@@ -1,0 +1,24 @@
+---
+layout: page
+title: '<a href="http://simonmar.github.io/bib/papers/weak.pdf">Stretching the storage manager: weak pointers and stable names in {H}askell</a>'
+description: ""
+category: publications
+tags: []
+---
+(Simon Peyton Jones, Simon Marlow, Conal Elliot) *Proceedings of the 11th International Workshop on the Implementation of Functional Languages*, The Netherlands, Springer-Verlag, September 1999 <a href="weakptrs99.bib">BibTeX</a>
+
+Every now and then, a user of the Glasgow Haskell
+Compiler asks for a feature that requires specialised support from the
+storage manager.  Memo functions, pointer equality, external pointers,
+finalizers, and weak pointers, are all examples.
+
+We take memo functions as our exemplar because they turn out to be the
+trickiest to support.  We present no fewer than four distinct
+mechanisms that are needed to support memo tables, and that (in
+various combinations) satisfy a variety of other needs.
+
+The resulting set of primitives is undoubtedly powerful and useful.
+Whether they are {\em too} powerful is not yet clear.  While the focus
+of our discussion is on Haskell, there is nothing Haskell-specific
+about most of the primitives, which could readily be used in other
+settings.  

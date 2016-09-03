@@ -1,0 +1,29 @@
+@InProceedings{nonstophaskell00,
+   author = {A. M. Cheadle and A. J. Field and S. Marlow and S. L. {Peyton Jones} and R. L. While},
+   title = {Non-stop {H}askell},
+   booktitle = {ICFP '00: Proceedings of the fifth ACM SIGPLAN international conference on Functional programming},
+   year = {2000},
+   abstract = {We describe an efficient technique for incorporating Baker's
+ incremental garbage collection algorithm into the Spineless Tagless
+ G-machine on stock hardware. This algorithm eliminates the stop/go
+ execution associated with bulk copying collection algorithms,
+ allowing the system to place an upper bound on the pauses due to
+ garbage collection. The technique exploits the fact that objects are
+ always accessed by jumping to code rather than being explicitly
+ dereferenced. It works by modifying the entry code-pointer when an
+ object is in the transient state of being evacuated but not
+ scavenged. An attempt to enter it from the mutator causes the object
+ to "self-scavenge" transparently before resetting its entry code
+ pointer. We describe an implementation of the scheme in v4.01 of the
+ Glasgow Haskell Compiler and report performance results obtained by
+ executing a range of applications. These experiments show that the
+ read barrier can be implemented in dynamic dispatching systems such
+ as the STG-machine with very short mutator pause times and with
+ negligible overhead on execution time.
+},
+   url = {http://simonmar.github.io/bib/papers/nonstop.pdf},
+   doi = {http://doi.acm.org/10.1145/351240.351265},
+   isbn = {1-58113-202-6},
+   pages = {257--267},
+   publisher = {ACM Press}
+}

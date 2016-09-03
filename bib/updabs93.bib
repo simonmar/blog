@@ -1,0 +1,21 @@
+@InProceedings{updabs93,
+   author = {Simon Marlow},
+   title = {Update Avoidance Analysis by Abstract Interpretation},
+   booktitle = {Proceedings of the 1993 Glasgow Workshop on Functional Programming},
+   year = {1993},
+   address = {Ayr, Scotland},
+   abstract = {A requirement  of lazy    evaluation  is that     the value
+of any subexpression in the program is calculated no more than once.
+This is achieved by updating an expression with its value, once
+computed.  The problem is that updating is a costly operation, and
+experimentation has shown that it is only necessary in about 30\% of
+cases (that is, 70\% of expressions represent values that are only
+ever required once during execution).  The aim of the analysis
+presented in this paper is to discover expressions that do not need to
+be updated, and thus reduce the execution time of the program.  The
+analysis has been implemented in the Glasgow Haskell Compiler, and
+results are given.
+},
+   publisher = {Springer-Verlag},
+   series = {Workshops in Computing}
+}

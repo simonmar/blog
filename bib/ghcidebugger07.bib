@@ -1,0 +1,30 @@
+@Unpublished{ghcidebugger07,
+   author = {Simon Marlow and Jos'e Iborra and Bernard Pope and Andy Gill},
+   title = {A Lightweight Interactive Debugger for {H}askell},
+   year = {2007},
+   month = {June},
+   abstract = {This paper describes the design and construction of a Haskell
+source-level debugger built into the GHCi interactive environment.  We
+have taken a pragmatic approach: the debugger is based on the
+traditional stop-examine-continue model of online debugging, which is
+simple and intuitive, but has traditionally been shunned in the
+context of Haskell because it exposes the lazy evaluation order.  We
+argue that this drawback is not as severe as it may seem, and in some
+cases is an advantage.
+
+The design focusses on \emph{availability}: our debugger is intended
+to work on all programs that can be compiled with GHC, and without
+requiring the programmer to jump through additional hoops to debug
+their program.  The debugger has a novel approach for reconstructing
+the type of runtime values in a polymorphic context.  Our
+implementation is light on complexity, and was integrated into GHC
+without significant upheaval.
+},
+   url = {http://simonmar.github.io/bib/papers/ghci-debug.pdf},
+   doi = {{http://doi.acm.org/10.1145/1291201.1291217}},
+   isbn = {{978-1-59593-674-5}},
+   pages = {{13--24}},
+   location = {{Freiburg, Germany}},
+   publisher = {{ACM}},
+   note = {Haskell '07: Proceedings of the ACM SIGPLAN workshop on Haskell workshop}
+}

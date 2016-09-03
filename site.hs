@@ -37,6 +37,17 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
     
+    match "bib/*.md" $ do
+        route $ setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/page.html"    postCtx
+            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= relativizeUrls
+    
+    match "bib/*.bib" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     -- http://jaspervdj.be/hakyll/tutorials/05-snapshots-feeds.html
     let rss name render' =
           create [name] $ do

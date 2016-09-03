@@ -1,0 +1,30 @@
+---
+layout: page
+title: '<a href="http://simonmar.github.io/bib/papers/ptr-tagging.pdf">Faster laziness using dynamic pointer tagging</a>'
+description: ""
+category: publications
+tags: []
+---
+(Simon Marlow, Alexey Rodriguez Yakushev, Simon Peyton Jones) *ICFP '07: Proceedings of the ACM SIGPLAN international conference on Functional programming*, Freiburg, Germany, ACM Press, October 2007 <a href="pointertagging07.bib">BibTeX</a>
+
+In the light of evidence that Haskell programs compiled by GHC exhibit
+large numbers of mispredicted branches on modern processors, we
+re-examine the ``tagless'' aspect of the STG-machine that GHC uses as
+its evaluation model.  
+
+We propose two tagging strategies: a simple strategy called
+semi-tagging that seeks to avoid one common source of unpredictable
+indirect jumps, and a more complex strategy called dynamic
+pointer-tagging that uses the spare low bits in a pointer to encode
+information about the pointed-to object.  Both of these strategies
+have been implemented and exhaustively measured in the context of a
+production compiler, GHC, and the paper contains detailed descriptions
+of the implementations.  Our measurements demonstrate significant
+performance improvements (14\% for dynamic pointer-tagging with only a
+2\% increase in code size), and we further demonstrate that much of the
+improvement can be attributed to the elimination of mispredicted
+branch instructions.
+
+As part of our investigations we also discovered that one optimisation
+in the STG-machine, vectored-returns, is no longer worthwhile and we
+explain why.
