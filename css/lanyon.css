@@ -113,12 +113,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #c0c0c0;
   letter-spacing: 0;
 }
+.masthead-links {
+  float: right;
+  font-size: 75%;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}
 
 @media (max-width: 48em) {
   .masthead-title {
     text-align: center;
   }
   .masthead-title small {
+    display: none;
+  }
+  .masthead-links {
     display: none;
   }
 }
