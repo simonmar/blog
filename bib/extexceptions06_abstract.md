@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/ext-exceptions.pdf">An Extensible Dynamically-Typed Hierarchy of Exceptions</a>'
+title: 'An Extensible Dynamically-Typed Hierarchy of Exceptions'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow) *Haskell '06: Proceedings of the 2006 ACM SIGPLAN workshop on Haskell*, Portland, Oregon, ACM Press, September 2006 <a href="extexceptions06.bib">BibTeX</a>
+(Simon Marlow) *Haskell '06: Proceedings of the 2006 ACM SIGPLAN workshop on Haskell*, Portland, Oregon, ACM Press, September 2006
+
+<a href="http://simonmar.github.io/bib/papers/ext-exceptions.pdf">Full Paper</a> | <a href="extexceptions06.bib">BibTeX</a>
 
 In this paper we address the lack of extensibility of the exception
 type in Haskell.  We propose a lightweight solution involving the use

@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/web-server-jfp.pdf">Developing a high-performance web server in {C}oncurrent {H}askell</a>'
+title: 'Developing a high-performance web server in {C}oncurrent {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow) *Journal of Functional Programming*, 12(4+5):359--374, July 2002 <a href="webserverjfp.bib">BibTeX</a>
+(Simon Marlow) *Journal of Functional Programming*, 12(4+5):359--374, July 2002
+
+<a href="http://simonmar.github.io/bib/papers/web-server-jfp.pdf">Full Paper</a> | <a href="webserverjfp.bib">BibTeX</a>
 
 Server applications, and in particular network-based server
 applications, place a unique combination of demands on a programming

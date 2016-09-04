@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/backpack-paper.pdf">Backpack: Retrofitting Haskell with Interfaces</a>'
+title: 'Backpack: Retrofitting Haskell with Interfaces'
 description: ""
 category: publications
 tags: []
 ---
-(Scott Kilpatrick, Derek Dreyer, Simon Peyton Jones, Simon Marlow) *Proceedings of the 41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages*, pages 19--31, San Diego, California, USA, ACM, 2014 <a href="backpack-2014.bib">BibTeX</a>
+(Scott Kilpatrick, Derek Dreyer, Simon Peyton Jones, Simon Marlow) *Proceedings of the 41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages*, pages 19--31, San Diego, California, USA, ACM, 2014
+
+<a href="http://simonmar.github.io/bib/papers/backpack-paper.pdf">Full Paper</a> | <a href="backpack-2014.bib">BibTeX</a>
 
 Module systems like that of Haskell permit only a weak form of modularity in which module implementations depend directly on other implementations and must be processed in dependency order. Module systems like that of ML, on the other hand, permit a stronger form of modularity in which explicit interfaces express assumptions about dependencies, and each module can be typechecked and reasoned about independently.
 

@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/vshaskell.pdf">Visual {H}askell: A full-featured {H}askell development environment</a>'
+title: 'Visual {H}askell: A full-featured {H}askell development environment'
 description: ""
 category: publications
 tags: []
 ---
-(Krasimir Angelov, Simon Marlow) *Haskell '05: Proceedings of the 2005 ACM SIGPLAN workshop on Haskell*, pages 5--16, Tallinn, Estonia, ACM Press, September 2005 <a href="vshaskell05.bib">BibTeX</a>
+(Krasimir Angelov, Simon Marlow) *Haskell '05: Proceedings of the 2005 ACM SIGPLAN workshop on Haskell*, pages 5--16, Tallinn, Estonia, ACM Press, September 2005
+
+<a href="http://simonmar.github.io/bib/papers/vshaskell.pdf">Full Paper</a> | <a href="vshaskell05.bib">BibTeX</a>
 
 We describe the design and implementation of a full-featured Haskell
 development environment, based on Microosft's extensible Visual Studio

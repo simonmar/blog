@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/strategies.pdf">Seq no more: Better Strategies for Parallel {H}askell</a>'
+title: 'Seq no more: Better Strategies for Parallel {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Patrick Maier, Hans-Wolfgang Loidl, Mustafa K Aswad, Phil Trinder) *Haskell '10: Proceedings of the Third ACM SIGPLAN Symposium on Haskell*, Baltimore, USA, ACM, 2010 <a href="strategies-2010.bib">BibTeX</a>
+(Simon Marlow, Patrick Maier, Hans-Wolfgang Loidl, Mustafa K Aswad, Phil Trinder) *Haskell '10: Proceedings of the Third ACM SIGPLAN Symposium on Haskell*, Baltimore, USA, ACM, 2010
+
+<a href="http://simonmar.github.io/bib/papers/strategies.pdf">Full Paper</a> | <a href="strategies-2010.bib">BibTeX</a>
 
 We present a complete redesign of Evaluation Strategies, a key
 abstraction for specifying pure, deterministic parallelism in Haskell.

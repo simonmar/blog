@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/ghci-debug.pdf">A Lightweight Interactive Debugger for {H}askell</a>'
+title: 'A Lightweight Interactive Debugger for {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Jos'e Iborra, Bernard Pope, Andy Gill) Haskell '07: Proceedings of the ACM SIGPLAN workshop on Haskell workshop, pages 13--24, Freiburg, Germany, ACM, June 2007 <a href="ghcidebugger07.bib">BibTeX</a>
+(Simon Marlow, Jos'e Iborra, Bernard Pope, Andy Gill) Haskell '07: Proceedings of the ACM SIGPLAN workshop on Haskell workshop, pages 13--24, Freiburg, Germany, ACM, June 2007
+
+<a href="http://simonmar.github.io/bib/papers/ghci-debug.pdf">Full Paper</a> | <a href="ghcidebugger07.bib">BibTeX</a>
 
 This paper describes the design and construction of a Haskell
 source-level debugger built into the GHCi interactive environment.  We

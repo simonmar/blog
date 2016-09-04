@@ -5,7 +5,9 @@ description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow) **, PhD thesis, University of Glasgow, 1996 <a href="marlowthesis.bib">BibTeX</a>
+(Simon Marlow) **, PhD thesis, University of Glasgow, 1996
+
+| <a href="marlowthesis.bib">BibTeX</a>
 
 Functional programming languages are an ideal medium for program
 optimisations based on source-to-source transformation techniques.

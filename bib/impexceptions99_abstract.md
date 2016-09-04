@@ -5,7 +5,9 @@ description: ""
 category: publications
 tags: []
 ---
-(Simon Peyton Jones, Alastair Reid, Tony Hoare, Simon Marlow, Fergus Henderson) *Proceedings of the ACM SIGPLAN '99 Conference on Programming Language Design and Implementation*, pages 25--36, Atlanta, Georgia, May 1999 <a href="impexceptions99.bib">BibTeX</a>
+(Simon Peyton Jones, Alastair Reid, Tony Hoare, Simon Marlow, Fergus Henderson) *Proceedings of the ACM SIGPLAN '99 Conference on Programming Language Design and Implementation*, pages 25--36, Atlanta, Georgia, May 1999
+
+| <a href="impexceptions99.bib">BibTeX</a>
 
 Some modern superscalar microprocessors provide only 
 {\em imprecise exceptions}.

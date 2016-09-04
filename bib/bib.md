@@ -5,6 +5,9 @@ description: ""
 category: publications
 tags: []
 ---
+**<a href="http://simonmar.github.io/bib/papers/shake.pdf">Non-recursive Make Considered Harmful: Build Systems at Scale</a>** (Andrey Mokhov, Neil Mitchell, Simon Peyton Jones, Simon Marlow) *Proceedings of the 9th International Symposium on Haskell*, pages 170--181, Nara, Japan, ACM, 2016
+<a href="shake-2016_abstract.html">Abstract</a> <a href="shake-2016.bib">BibTeX</a>
+                                                                                   
 **<a href="http://simonmar.github.io/bib/papers/applicativedo.pdf">Desugaring Haskell's Do-notation into Applicative Operations</a>** (Simon Marlow, Simon Peyton Jones, Edward Kmett, Andrey Mokhov) *Proceedings of the 9th International Symposium on Haskell*, pages 92--104, Nara, Japan, ACM, 2016
 <a href="applicativedo-2016_abstract.html">Abstract</a> <a href="applicativedo-2016.bib">BibTeX</a>
                                                                                                    

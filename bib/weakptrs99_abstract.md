@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/weak.pdf">Stretching the storage manager: weak pointers and stable names in {H}askell</a>'
+title: 'Stretching the storage manager: weak pointers and stable names in {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Peyton Jones, Simon Marlow, Conal Elliot) *Proceedings of the 11th International Workshop on the Implementation of Functional Languages*, The Netherlands, Springer-Verlag, September 1999 <a href="weakptrs99.bib">BibTeX</a>
+(Simon Peyton Jones, Simon Marlow, Conal Elliot) *Proceedings of the 11th International Workshop on the Implementation of Functional Languages*, The Netherlands, Springer-Verlag, September 1999
+
+<a href="http://simonmar.github.io/bib/papers/weak.pdf">Full Paper</a> | <a href="weakptrs99.bib">BibTeX</a>
 
 Every now and then, a user of the Glasgow Haskell
 Compiler asks for a feature that requires specialised support from the

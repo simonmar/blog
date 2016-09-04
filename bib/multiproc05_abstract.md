@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/multiproc.pdf">{H}askell on a Shared-Memory Multiprocessor</a>'
+title: '{H}askell on a Shared-Memory Multiprocessor'
 description: ""
 category: publications
 tags: []
 ---
-(Tim Harris, Simon Marlow, Simon Peyton Jones) *Haskell '05: Proceedings of the 2005 ACM SIGPLAN workshop on Haskell*, pages 49--61, Tallinn, Estonia, ACM Press, September 2005 <a href="multiproc05.bib">BibTeX</a>
+(Tim Harris, Simon Marlow, Simon Peyton Jones) *Haskell '05: Proceedings of the 2005 ACM SIGPLAN workshop on Haskell*, pages 49--61, Tallinn, Estonia, ACM Press, September 2005
+
+<a href="http://simonmar.github.io/bib/papers/multiproc.pdf">Full Paper</a> | <a href="multiproc05.bib">BibTeX</a>
 
 Multi-core processors are coming, and we need ways to program them.
 The combination of purely-functional programming and explicit, monadic threads,

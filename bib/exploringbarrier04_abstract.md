@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/ExploringBarrierToEntry.pdf">Exploring the Barrier to Entry: Incremental Generational Garbage Collection for {H}askell</a>'
+title: 'Exploring the Barrier to Entry: Incremental Generational Garbage Collection for {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(A.M. Cheadle, A.J. Field, S. Marlow, S.L. Peyton Jones, R.L. While) *International Symposium on Memory Management*, ACM, October 2004 <a href="exploringbarrier04.bib">BibTeX</a>
+(A.M. Cheadle, A.J. Field, S. Marlow, S.L. Peyton Jones, R.L. While) *International Symposium on Memory Management*, ACM, October 2004
+
+<a href="http://simonmar.github.io/bib/papers/ExploringBarrierToEntry.pdf">Full Paper</a> | <a href="exploringbarrier04.bib">BibTeX</a>
 
 We document the design and implementation of a "production"
 incremental garbage collector for GHC 6.02. It builds

@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/haxl-icfp14.pdf">There is No Fork: An Abstraction for Efficient, Concurrent, and Concise Data Access</a>'
+title: 'There is No Fork: An Abstraction for Efficient, Concurrent, and Concise Data Access'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Louis Brandy, Jonathan Coens, Jon Purdy) *Proceedings of the 19th ACM SIGPLAN International Conference on Functional Programming*, pages 325--337, Gothenburg, Sweden, ACM, 2014 <a href="nofork-2014.bib">BibTeX</a>
+(Simon Marlow, Louis Brandy, Jonathan Coens, Jon Purdy) *Proceedings of the 19th ACM SIGPLAN International Conference on Functional Programming*, pages 325--337, Gothenburg, Sweden, ACM, 2014
+
+<a href="http://simonmar.github.io/bib/papers/haxl-icfp14.pdf">Full Paper</a> | <a href="nofork-2014.bib">BibTeX</a>
 
 We describe a new programming idiom for concurrency, based on
 Applicative Functors, where concurrency is implicit in the Applicative

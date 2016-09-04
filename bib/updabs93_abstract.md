@@ -5,7 +5,9 @@ description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow) *Proceedings of the 1993 Glasgow Workshop on Functional Programming*, Ayr, Scotland, Springer-Verlag, 1993 <a href="updabs93.bib">BibTeX</a>
+(Simon Marlow) *Proceedings of the 1993 Glasgow Workshop on Functional Programming*, Ayr, Scotland, Springer-Verlag, 1993
+
+| <a href="updabs93.bib">BibTeX</a>
 
 A requirement  of lazy    evaluation  is that     the value
 of any subexpression in the program is calculated no more than once.

@@ -1,0 +1,27 @@
+@InProceedings{shake-2016,
+   author = {Andrey Mokhov and Neil Mitchell and Simon Peyton Jones and Simon Marlow},
+   title = {Non-recursive Make Considered Harmful: Build Systems at Scale},
+   booktitle = {Proceedings of the 9th International Symposium on Haskell},
+   year = {2016},
+   abstract = {Most build systems start small and simple, but over time grow
+into hairy monsters that few dare to touch. As we demonstrate in
+this paper, there are a few issues that cause build systems major
+scalability challenges, and many pervasively used build systems
+(e.g. Make) do not scale well.
+
+This paper presents a solution to the challenges we identify.  We use
+functional programming to design abstractions for build systems, and
+implement them on top of the Shake library, which allows us to
+describe build rules and dependencies. To substantiate our claims, we
+engineer a new build system for the Glasgow Haskell Compiler. The
+result is more scalable, faster, and spectacularly more maintainable
+than its Make-based predecessor.
+},
+   url = {http://simonmar.github.io/bib/papers/shake.pdf},
+   doi = {10.1145/2976002.2976011},
+   isbn = {978-1-4503-4434-0},
+   pages = {170--181},
+   location = {Nara, Japan},
+   publisher = {ACM},
+   series = {Haskell 2016}
+}

@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/parallel-gc.pdf">Parallel Generational-Copying Garbage Collection with a Block-Structured Heap</a>'
+title: 'Parallel Generational-Copying Garbage Collection with a Block-Structured Heap'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Tim Harris, Roshan P. James, Simon Peyton Jones) *ISMM '08: Proceedings of the 7th international symposium on Memory management*, Tucson, Arizona, ACM, June 2008 <a href="parallel-gc-08.bib">BibTeX</a>
+(Simon Marlow, Tim Harris, Roshan P. James, Simon Peyton Jones) *ISMM '08: Proceedings of the 7th international symposium on Memory management*, Tucson, Arizona, ACM, June 2008
+
+<a href="http://simonmar.github.io/bib/papers/parallel-gc.pdf">Full Paper</a> | <a href="parallel-gc-08.bib">BibTeX</a>
 
 We present a parallel generational-copying garbage collector
 implemented for the Glasgow Haskell Compiler.  We use a

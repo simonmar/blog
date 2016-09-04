@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/safe-haskell.pdf">Safe {H}askell</a>'
+title: 'Safe {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(David Terei, David Mazières, Simon Marlow, Simon Peyton Jones) *Haskell '12: Proceedings of the Fifth ACM SIGPLAN Symposium on Haskell*, Copenhagen, Denmark, ACM, 2012 <a href="safe-haskell-2012.bib">BibTeX</a>
+(David Terei, David Mazières, Simon Marlow, Simon Peyton Jones) *Haskell '12: Proceedings of the Fifth ACM SIGPLAN Symposium on Haskell*, Copenhagen, Denmark, ACM, 2012
+
+<a href="http://simonmar.github.io/bib/papers/safe-haskell.pdf">Full Paper</a> | <a href="safe-haskell-2012.bib">BibTeX</a>
 
 Though Haskell is predominantly type-safe, implementations contain a
 few loopholes through which code can bypass typing and module

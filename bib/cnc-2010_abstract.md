@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/haskell_cnc_draft_submission.pdf">Intel Concurrent Collections for {H}askell</a>'
+title: 'Intel Concurrent Collections for {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(Ryan Newton, Chih-Ping Chen, Simon Marlow) (unpublished), 2010 <a href="cnc-2010.bib">BibTeX</a>
+(Ryan Newton, Chih-Ping Chen, Simon Marlow) (unpublished), 2010
+
+<a href="http://simonmar.github.io/bib/papers/haskell_cnc_draft_submission.pdf">Full Paper</a> | <a href="cnc-2010.bib">BibTeX</a>
 
 Intel Concurrent Collections (CnC) is a parallel programming
 model in which a network of steps (functions) communicate

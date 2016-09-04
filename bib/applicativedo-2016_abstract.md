@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/applicativedo.pdf">Desugaring Haskell''s Do-notation into Applicative Operations</a>'
+title: 'Desugaring Haskell''s Do-notation into Applicative Operations'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Simon Peyton Jones, Edward Kmett, Andrey Mokhov) *Proceedings of the 9th International Symposium on Haskell*, pages 92--104, Nara, Japan, ACM, 2016 <a href="applicativedo-2016.bib">BibTeX</a>
+(Simon Marlow, Simon Peyton Jones, Edward Kmett, Andrey Mokhov) *Proceedings of the 9th International Symposium on Haskell*, pages 92--104, Nara, Japan, ACM, 2016
+
+<a href="http://simonmar.github.io/bib/papers/applicativedo.pdf">Full Paper</a> | <a href="applicativedo-2016.bib">BibTeX</a>
 
 Monads have taken the world by storm, and are supported by
 do-notation (at least in Haskell).  Programmers are increasingly

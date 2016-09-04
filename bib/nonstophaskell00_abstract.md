@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/nonstop.pdf">Non-stop {H}askell</a>'
+title: 'Non-stop {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(A. M. Cheadle, A. J. Field, S. Marlow, S. L. Peyton Jones, R. L. While) *ICFP '00: Proceedings of the fifth ACM SIGPLAN international conference on Functional programming*, pages 257--267, ACM Press, 2000 <a href="nonstophaskell00.bib">BibTeX</a>
+(A. M. Cheadle, A. J. Field, S. Marlow, S. L. Peyton Jones, R. L. While) *ICFP '00: Proceedings of the fifth ACM SIGPLAN international conference on Functional programming*, pages 257--267, ACM Press, 2000
+
+<a href="http://simonmar.github.io/bib/papers/nonstop.pdf">Full Paper</a> | <a href="nonstophaskell00.bib">BibTeX</a>
 
 We describe an efficient technique for incorporating Baker's
  incremental garbage collection algorithm into the Spineless Tagless

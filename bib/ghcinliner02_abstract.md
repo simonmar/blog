@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/inline.pdf">Secrets of the Glasgow {H}askell Compiler inliner</a>'
+title: 'Secrets of the Glasgow {H}askell Compiler inliner'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Peyton Jones, Simon Marlow) *Journal of Functional Programming*, 12(4+5):393--434, July 2002 <a href="ghcinliner02.bib">BibTeX</a>
+(Simon Peyton Jones, Simon Marlow) *Journal of Functional Programming*, 12(4+5):393--434, July 2002
+
+<a href="http://simonmar.github.io/bib/papers/inline.pdf">Full Paper</a> | <a href="ghcinliner02.bib">BibTeX</a>
 
 Higher-order languages, such as Haskell, encourage the programmer to
 build abstractions by composing functions.  A good compiler must

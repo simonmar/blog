@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/conc-ffi.pdf">Extending the {H}askell Foreign Function Interface with Concurrency</a>'
+title: 'Extending the {H}askell Foreign Function Interface with Concurrency'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Simon Peyton Jones, Wolfgang Thaller) *Proceedings of the ACM SIGPLAN workshop on Haskell*, pages 57--68, Snowbird, Utah, USA, September 2004 <a href="concffi04.bib">BibTeX</a>
+(Simon Marlow, Simon Peyton Jones, Wolfgang Thaller) *Proceedings of the ACM SIGPLAN workshop on Haskell*, pages 57--68, Snowbird, Utah, USA, September 2004
+
+<a href="http://simonmar.github.io/bib/papers/conc-ffi.pdf">Full Paper</a> | <a href="concffi04.bib">BibTeX</a>
 
 A Haskell system that includes both the Foreign Function Interface and
 the Concurrent Haskell extension must consider how Concurrent Haskell

@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/erltc.pdf">A practical subtyping system for Erlang</a>'
+title: 'A practical subtyping system for Erlang'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Philip Wadler) *ICFP '97: Proceedings of the second ACM SIGPLAN international conference on Functional programming*, pages 136--149, Amsterdam, The Netherlands, ACM Press, June 1997 <a href="erltc97.bib">BibTeX</a>
+(Simon Marlow, Philip Wadler) *ICFP '97: Proceedings of the second ACM SIGPLAN international conference on Functional programming*, pages 136--149, Amsterdam, The Netherlands, ACM Press, June 1997
+
+<a href="http://simonmar.github.io/bib/papers/erltc.pdf">Full Paper</a> | <a href="erltc97.bib">BibTeX</a>
 
 We present a type system for the programming language Erlang.  The
 type system supports subtyping and declaration-free recursive types,

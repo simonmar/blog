@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/multicore-ghc.pdf">Runtime Support for Multicore {H}askell</a>'
+title: 'Runtime Support for Multicore {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Simon Peyton Jones, Satnam Singh) *ICFP '09: Proceeding of the 14th ACM SIGPLAN International Conference on Functional Programming*, Edinburgh, Scotland, August 2009 <a href="multicore-ghc-09.bib">BibTeX</a>
+(Simon Marlow, Simon Peyton Jones, Satnam Singh) *ICFP '09: Proceeding of the 14th ACM SIGPLAN International Conference on Functional Programming*, Edinburgh, Scotland, August 2009
+
+<a href="http://simonmar.github.io/bib/papers/multicore-ghc.pdf">Full Paper</a> | <a href="multicore-ghc-09.bib">BibTeX</a>
 
 Purely functional programs should run well on parallel hardware
 because of the absence of side effects, but it has proved hard to

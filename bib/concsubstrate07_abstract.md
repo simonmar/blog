@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/conc-substrate.pdf">Lightweight concurrency primitives for GHC</a>'
+title: 'Lightweight concurrency primitives for GHC'
 description: ""
 category: publications
 tags: []
 ---
-(Peng Li, Simon Marlow, Simon Peyton Jones, Andrew Tolmach) Haskell '07: Proceedings of the ACM SIGPLAN workshop on Haskell workshop, pages 107--118, Freiburg, Germany, ACM, June 2007 <a href="concsubstrate07.bib">BibTeX</a>
+(Peng Li, Simon Marlow, Simon Peyton Jones, Andrew Tolmach) Haskell '07: Proceedings of the ACM SIGPLAN workshop on Haskell workshop, pages 107--118, Freiburg, Germany, ACM, June 2007
+
+<a href="http://simonmar.github.io/bib/papers/conc-substrate.pdf">Full Paper</a> | <a href="concsubstrate07.bib">BibTeX</a>
 
 The Glasgow Haskell Compiler (GHC) has quite sophisticated support
 for concurrency in its runtime system, which is written in low-level

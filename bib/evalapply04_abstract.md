@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/eval-apply.pdf">Making a fast curry: push/enter vs. eval/apply for higher-order languages</a>'
+title: 'Making a fast curry: push/enter vs. eval/apply for higher-order languages'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Simon Peyton Jones) *ICFP'04: Proceedings of the ACM SIGPLAN 2004 International Conference on Functional Programming*, pages 4--15, ACM Press, 2004 <a href="evalapply04.bib">BibTeX</a>
+(Simon Marlow, Simon Peyton Jones) *ICFP'04: Proceedings of the ACM SIGPLAN 2004 International Conference on Functional Programming*, pages 4--15, ACM Press, 2004
+
+<a href="http://simonmar.github.io/bib/papers/eval-apply.pdf">Full Paper</a> | <a href="evalapply04.bib">BibTeX</a>
 
 Higher-order languages that encourage currying are implemented using
 one of two basic evaluation models: push/enter or

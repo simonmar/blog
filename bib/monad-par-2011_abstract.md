@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/monad-par.pdf">A Monad for Deterministic Parallelism</a>'
+title: 'A Monad for Deterministic Parallelism'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Ryan Newton, Simon Peyton Jones) *Haskell '11: Proceedings of the Fourth ACM SIGPLAN Symposium on Haskell*, Tokyo, Japan, ACM, 2011 <a href="monad-par-2011.bib">BibTeX</a>
+(Simon Marlow, Ryan Newton, Simon Peyton Jones) *Haskell '11: Proceedings of the Fourth ACM SIGPLAN Symposium on Haskell*, Tokyo, Japan, ACM, 2011
+
+<a href="http://simonmar.github.io/bib/papers/monad-par.pdf">Full Paper</a> | <a href="monad-par-2011.bib">BibTeX</a>
 
 We present a new programming model for deterministic parallel
 computation in a pure functional language.  The model is monadic and

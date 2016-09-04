@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/threadscope.pdf">Parallel Performance Tuning for {H}askell</a>'
+title: 'Parallel Performance Tuning for {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(Don Jones Jr., Simon Marlow, Satnam Singh) *Haskell '09: Proceedings of the Second ACM SIGPLAN Symposium on Haskell*, Edinburgh, Scotland, ACM, 2009 <a href="threadscope-09.bib">BibTeX</a>
+(Don Jones Jr., Simon Marlow, Satnam Singh) *Haskell '09: Proceedings of the Second ACM SIGPLAN Symposium on Haskell*, Edinburgh, Scotland, ACM, 2009
+
+<a href="http://simonmar.github.io/bib/papers/threadscope.pdf">Full Paper</a> | <a href="threadscope-09.bib">BibTeX</a>
 
 Parallel Haskell programming has entered the mainstream with support
 now included in GHC for multiple parallel programming models, along

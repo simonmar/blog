@@ -5,7 +5,9 @@ description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow) *Haskell Workshop*, Montreal, Canada, September 2000 <a href="webserver00.bib">BibTeX</a>
+(Simon Marlow) *Haskell Workshop*, Montreal, Canada, September 2000
+
+| <a href="webserver00.bib">BibTeX</a>
 
 Server applications, and in particular network-based server
 applications, place a unique combination of demands on a programming

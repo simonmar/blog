@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/concurrent-data.pdf">Comparing the performance of concurrent linked-list implementations in {H}askell</a>'
+title: 'Comparing the performance of concurrent linked-list implementations in {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(Martin Sulzmann, Edmund S. L. Lam, Simon Marlow) *DAMP 2009: Workshop on Declarative Aspects of Multicore Programming*, Savannah, Georgia, USA, 2009 <a href="concurrent-data-08.bib">BibTeX</a>
+(Martin Sulzmann, Edmund S. L. Lam, Simon Marlow) *DAMP 2009: Workshop on Declarative Aspects of Multicore Programming*, Savannah, Georgia, USA, 2009
+
+<a href="http://simonmar.github.io/bib/papers/concurrent-data.pdf">Full Paper</a> | <a href="concurrent-data-08.bib">BibTeX</a>
 
 Haskell has a rich set of synchronization primitives for implementing
 shared-state concurrency abstractions, ranging from the very high

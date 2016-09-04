@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/ptr-tagging.pdf">Faster laziness using dynamic pointer tagging</a>'
+title: 'Faster laziness using dynamic pointer tagging'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Alexey Rodriguez Yakushev, Simon Peyton Jones) *ICFP '07: Proceedings of the ACM SIGPLAN international conference on Functional programming*, Freiburg, Germany, ACM Press, October 2007 <a href="pointertagging07.bib">BibTeX</a>
+(Simon Marlow, Alexey Rodriguez Yakushev, Simon Peyton Jones) *ICFP '07: Proceedings of the ACM SIGPLAN international conference on Functional programming*, Freiburg, Germany, ACM Press, October 2007
+
+<a href="http://simonmar.github.io/bib/papers/ptr-tagging.pdf">Full Paper</a> | <a href="pointertagging07.bib">BibTeX</a>
 
 In the light of evidence that Haskell programs compiled by GHC exhibit
 large numbers of mispredicted branches on modern processors, we

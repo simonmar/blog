@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/composable_scheduler_activations.pdf">Composable scheduler activations for Haskell</a>'
+title: 'Composable scheduler activations for Haskell'
 description: ""
 category: publications
 tags: []
 ---
-(K. C. Sivaramakrishnan, Tim Harris, Simon Marlow, Simon Peyton Jones) *Journal of Functional Programming*, 26, pages e9 (39 pages), 2016 <a href="composable_scheduler_activations-2016.bib">BibTeX</a>
+(K. C. Sivaramakrishnan, Tim Harris, Simon Marlow, Simon Peyton Jones) *Journal of Functional Programming*, 26, pages e9 (39 pages), 2016
+
+<a href="http://simonmar.github.io/bib/papers/composable_scheduler_activations.pdf">Full Paper</a> | <a href="composable_scheduler_activations-2016.bib">BibTeX</a>
 
 The runtime for a modern, concurrent, garbage collected language like
 Java or Haskell is like an operating system: sophisticated, complex,

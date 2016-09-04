@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/local-gc.pdf">Multicore Garbage Collection with Local Heaps</a>'
+title: 'Multicore Garbage Collection with Local Heaps'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Simon Peyton Jones) *ISMM '11: Proceedings of the 10th International Symposium on Memory Management*, San Jose, California, ACM, June 2011 <a href="local-gc-2011.bib">BibTeX</a>
+(Simon Marlow, Simon Peyton Jones) *ISMM '11: Proceedings of the 10th International Symposium on Memory Management*, San Jose, California, ACM, June 2011
+
+<a href="http://simonmar.github.io/bib/papers/local-gc.pdf">Full Paper</a> | <a href="local-gc-2011.bib">BibTeX</a>
 
 In a parallel, shared-memory, language with a garbage collected heap,
 it is desirable for each processor to perform minor garbage

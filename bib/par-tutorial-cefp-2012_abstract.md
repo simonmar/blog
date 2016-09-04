@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/par-tutorial-cefp-2012.pdf">Parallel and Concurrent Programming in {H}askell</a>'
+title: 'Parallel and Concurrent Programming in {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow) *CEFP 2011*, volume 7241 of LNCS, pages 339--401, 2012 <a href="par-tutorial-cefp-2012.bib">BibTeX</a>
+(Simon Marlow) *CEFP 2011*, volume 7241 of LNCS, pages 339--401, 2012
+
+<a href="http://simonmar.github.io/bib/papers/par-tutorial-cefp-2012.pdf">Full Paper</a> | <a href="par-tutorial-cefp-2012.bib">BibTeX</a>
 
 Haskell provides a rich set of abstractions for parallel and
 concurrent programming. This tutorial covers the basic concepts involved

@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/stm.pdf">Composable Memory Transactions</a>'
+title: 'Composable Memory Transactions'
 description: ""
 category: publications
 tags: []
 ---
-(Tim Harris, Simon Marlow, Simon Peyton Jones, Maurice Herlihy) *PPoPP'05: ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming*, Chicago, Illinois, June 2005 <a href="stm05.bib">BibTeX</a>
+(Tim Harris, Simon Marlow, Simon Peyton Jones, Maurice Herlihy) *PPoPP'05: ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming*, Chicago, Illinois, June 2005
+
+<a href="http://simonmar.github.io/bib/papers/stm.pdf">Full Paper</a> | <a href="stm05.bib">BibTeX</a>
 
 Writing concurrent programs is notoriously difficult, and is of
 increasing practical importance.  A particular source of concern

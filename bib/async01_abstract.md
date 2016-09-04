@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/async.pdf">Asynchronous exceptions in {H}askell</a>'
+title: 'Asynchronous exceptions in {H}askell'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow, Simon Peyton Jones, Andrew Moran, John Reppy) *PLDI '01: Proceedings of the ACM SIGPLAN 2001 conference on Programming language design and implementation*, pages 274--285, Snowbird, Utah, United States, ACM Press, 2001 <a href="async01.bib">BibTeX</a>
+(Simon Marlow, Simon Peyton Jones, Andrew Moran, John Reppy) *PLDI '01: Proceedings of the ACM SIGPLAN 2001 conference on Programming language design and implementation*, pages 274--285, Snowbird, Utah, United States, ACM Press, 2001
+
+<a href="http://simonmar.github.io/bib/papers/async.pdf">Full Paper</a> | <a href="async01.bib">BibTeX</a>
 
 Asynchronous exceptions, such as timeouts, are important for
 robust, modular programs, but are extremely difficult to program with

@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/haddock.pdf">{H}addock, A {H}askell Documentation Tool</a>'
+title: '{H}addock, A {H}askell Documentation Tool'
 description: ""
 category: publications
 tags: []
 ---
-(Simon Marlow) *Proceedings of the ACM SIGPLAN workshop on Haskell*, Pittsburgh Pennsylvania, USA, ACM Press, October 2002 <a href="haddock02.bib">BibTeX</a>
+(Simon Marlow) *Proceedings of the ACM SIGPLAN workshop on Haskell*, Pittsburgh Pennsylvania, USA, ACM Press, October 2002
+
+<a href="http://simonmar.github.io/bib/papers/haddock.pdf">Full Paper</a> | <a href="haddock02.bib">BibTeX</a>
 
 This paper describes Haddock, a tool for automatically generating
 documentation from Haskell source code.  Haddock's unique approach to

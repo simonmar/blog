@@ -1,11 +1,13 @@
 ---
 layout: page
-title: '<a href="http://simonmar.github.io/bib/papers/assoc.pdf">Associated types with class</a>'
+title: 'Associated types with class'
 description: ""
 category: publications
 tags: []
 ---
-(Manuel M. T. Chakravarty, Gabriele Keller, Simon Peyton Jones, Simon Marlow) *POPL '05: Proceedings of the 32nd ACM SIGPLAN-SIGACT sysposium on Principles of programming languages*, pages 1--13, Long Beach, California, USA, ACM Press, 2005 <a href="assoc05.bib">BibTeX</a>
+(Manuel M. T. Chakravarty, Gabriele Keller, Simon Peyton Jones, Simon Marlow) *POPL '05: Proceedings of the 32nd ACM SIGPLAN-SIGACT sysposium on Principles of programming languages*, pages 1--13, Long Beach, California, USA, ACM Press, 2005
+
+<a href="http://simonmar.github.io/bib/papers/assoc.pdf">Full Paper</a> | <a href="assoc05.bib">BibTeX</a>
 
 Haskell's type classes allow ad-hoc overloading, or typeindexing,
 of functions. A natural generalisation is to allow
