@@ -161,7 +161,7 @@ In each thread you call this to map that thread to a particular
 capability.  For example you might call it like this:
 
 ```
-static std:atomic<int> counter;
+static std::atomic<int> counter;
 ...
 rts_setInCallCapability(counter.fetch_add(1), 0);
 ```
