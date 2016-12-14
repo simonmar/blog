@@ -53,7 +53,7 @@ main = hakyll $ do
           create [name] $ do
               route idRoute
               compile $ do
-                  let feedCtx = postCtx `mappend` bodyField "description"
+                  let feedCtx = mconcat [ bodyField "description", postCtx ]  -- description must be prepended for some reason
                   posts <- fmap (take 10) . recentFirst =<< loadAllSnapshots "posts/*" "content"
                   render' feedConfiguration feedCtx posts
 
