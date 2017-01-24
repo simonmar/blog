@@ -123,7 +123,7 @@ narrowed down to one particular type of request, we were quickly able
 to identify the change that caused the problem, undo it, and notify
 the owner.  Nobody else noticed.
 
-## In the vast majority of code, we don't need to worry about asynchronous exeptions
+## In the vast majority of code, we don't need to worry about asynchronous exceptions
 
 Because you don't have to poll for an asynchronous exception, they
 work almost everywhere.  All pure code works with asynchronous
@@ -147,7 +147,7 @@ In principle, you can follow a few guidelines to be safe.
 
 * Use `bracket` when allocating any kind of resource that needs to be
   explicitly released.  This is not specific to asynchronous
-  exceptions: coping with with ordinary synchronous exceptions
+  exceptions: coping with ordinary synchronous exceptions
   requires a good resource-allocation discipline, so your code should
   be using `bracket` anyway.
 
