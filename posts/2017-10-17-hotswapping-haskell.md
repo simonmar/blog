@@ -6,6 +6,8 @@ category: ghc
 tags: [ghc]
 ---
 
+*Guest post by <a href="https://github.com/JonCoens">Jon Coens</a>*
+
 From developing code through deployment, Facebook needs to move fast. This is especially true for one of our <a href="https://code.facebook.com/posts/745068642270222/fighting-spam-with-haskell/">anti-abuse systems</a> that deploys hundreds of code changes every day. Releasing a large application (hundreds of Kloc) that many times a day presents plenty of intriguing challenges. Haskell's strict type system means we're able to confidently push new code knowing that we can't crash the server, but getting those changes out to many thousands of machines as fast as possible requires some ingenuity.
 
 Given the application size and deployment speed constraints:
@@ -22,7 +24,7 @@ It's like driving a car down the road, having a new engine fall into your lap, i
 
 ## Show Me The Code!
 
-For those who want a demo, look <a href="https://github.com/fbsamples/ghc-hotswap">here</a>. Make sure you have GHC 8.2.1 or later, then follow the README for how to configure the projects.
+For those who want a demo, look <a href="https://github.com/fbsamples/ghc-hotswap">here</a>. Make sure you have GHC 8.2.1 or later, then follow the <a href="https://github.com/fbsamples/ghc-hotswap/blob/master/README.md">`README`</a> for how to configure the projects.
 
 ## What about...
 
@@ -63,15 +65,15 @@ Fortunately, our use-case fits this mold.
 
 We'll talk about a handful of libraries + example code
 
-* **GHCi.ObjLink** - A library provided by GHC
+* <a href="https://downloads.haskell.org/~ghc/master/libraries/ghci/ghci/GHCi-ObjLink.html">**GHCi.ObjLink**</a> - A library provided by GHC
 
-* **ghc-hotswap** - A library to use
+* <a href="https://github.com/fbsamples/ghc-hotswap/tree/master/ghc-hotswap">**ghc-hotswap**</a> - A library to use
 
-* **ghc-hotswap-types** - User-written code to define the API
+* <a href="https://github.com/fbsamples/ghc-hotswap/tree/master/ghc-hotswap-types">**ghc-hotswap-types**</a> - User-written code to define the API
 
-* **ghc-hotswap-so** - User-written code that lives in the shared object
+* <a href="https://github.com/fbsamples/ghc-hotswap/tree/master/ghc-hotswap-so">**ghc-hotswap-so**</a> - User-written code that lives in the shared object
 
-* **ghc-hotswap-demo** - User-written application utilizing the above
+* <a href="https://github.com/fbsamples/ghc-hotswap/tree/master/ghc-hotswap-demo">**ghc-hotswap-demo**</a> - User-written application utilizing the above
 
 ### Loading and extracting from the shared object
 
@@ -209,9 +211,9 @@ At this point we now have only the next shared object mapped in memory and being
 
 The trickiest problem we've come across has been when the GC doesn't want to drop old shared objects. Eventually so many shared objects are linked at once that the process runs out of space to load in a new object, stalling all updates until the process is restarted.  We'll call this problem *shared object retention*, or just *retention*.
 
-An object is unloaded when (a) we've called unloadObj on it, and (b) the GC determines that there are no references from heap data into the object.  Retention can therefore only happen if we have some persistent data that lives across a shared object swap. Obviously it's better if you can avoid this, but sometimes it's necessary: e.g. in Sigma the persistent data consists of the pre-initialized data sources that we use with the Haxl monad, amongst other things.  The first step in avoiding retention is to be very clear about what this data is, and to fully audit it.
+An object is unloaded when (a) we've called `unloadObj` on it, and (b) the GC determines that there are no references from heap data into the object.  Retention can therefore only happen if we have some persistent data that lives across a shared object swap. Obviously it's better if you can avoid this, but sometimes it's necessary: e.g. in Sigma the persistent data consists of the pre-initialized data sources that we use with the Haxl monad, amongst other things.  The first step in avoiding retention is to be very clear about what this data is, and to fully audit it.
 
-To get retention, the persistent data must be mutable in some way (e.g. contain an IORef), and for retention to occur we must write something into the persistent IORef during the course of executing code from the shared object.  The data we wrote into the IORef can end up referring to the shared object in two ways:
+To get retention, the persistent data must be mutable in some way (e.g. contain an `IORef`), and for retention to occur we must write something into the persistent `IORef` during the course of executing code from the shared object.  The data we wrote into the `IORef` can end up referring to the shared object in two ways:
 
 * If it contains a thunk or a function, these will refer to code in the shared object.
 
@@ -219,7 +221,7 @@ To get retention, the persistent data must be mutable in some way (e.g. contain 
 
 So to avoid retention while having mutable persistent data, the rules of thumb are:
 
-1. `rnf` everything before writing into the persistent IORef, and ensure that any manual `NFData` instances don't lie.
+1. `rnf` everything before writing into the persistent `IORef`, and ensure that any manual `NFData` instances don't lie.
 
 2. Don't store values that contain functions
 
@@ -229,6 +231,8 @@ Debugging retention problems can be really hard, involving attaching to the proc
 
 ### Linker addressable memory is limited
 
-Calling the built file a shared object is a bit of a misnomer, as it isn't compiled with -fPIC and is actually just an object file. Files like these can only be loaded into the lower 2GB of memory (x86_64 small memory model uses 32 bit relative jumps), which can become restrictive when your object file gets large. Since the update mechanism relies on having multiple objects in memory at the same time, fragmentation of the mappable address space can become a problem. We've already made a few improvements to the GHCi linker to reduce the impact of these problems, but we're running out of options.
+Calling the built file a shared object is a bit of a misnomer, as it isn't compiled with `-fPIC` and is actually just an object file. Files like these can only be loaded into the lower 2GB of memory (x86_64 small memory model uses 32 bit relative jumps), which can become restrictive when your object file gets large. Since the update mechanism relies on having multiple objects in memory at the same time, fragmentation of the mappable address space can become a problem. We've already made a few improvements to the GHCi linker to reduce the impact of these problems, but we're running out of options.
 
-Ideally we'd switch to using true shared objects (built with -fPIC) to remove this limitation.  It requires some work to get there, though: GHC's dynamic linking support is designed to support a model where each package is in a separate shared library, whereas we want a mixed static/dynamic model.
+Ideally we'd switch to using true shared objects (built with `-fPIC`) to remove this limitation.  It requires some work to get there, though: GHC's dynamic linking support is designed to support a model where each package is in a separate shared library, whereas we want a mixed static/dynamic model.
+
+<a href="https://github.com/JonCoens">*Jon Coens*<a>
