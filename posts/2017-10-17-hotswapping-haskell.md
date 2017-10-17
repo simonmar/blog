@@ -6,7 +6,9 @@ category: ghc
 tags: [ghc]
 ---
 
-*Guest post by <a href="https://github.com/JonCoens">Jon Coens</a>*
+*This is a guest post by <a href="https://github.com/JonCoens">Jon
+ Coens</a>. Jon worked on the Haxl project since the beginning in
+ 2013, and nowadays he works on broadening Haskell use within Facebook.*
 
 From developing code through deployment, Facebook needs to move fast. This is especially true for one of our <a href="https://code.facebook.com/posts/745068642270222/fighting-spam-with-haskell/">anti-abuse systems</a> that deploys hundreds of code changes every day. Releasing a large application (hundreds of Kloc) that many times a day presents plenty of intriguing challenges. Haskell's strict type system means we're able to confidently push new code knowing that we can't crash the server, but getting those changes out to many thousands of machines as fast as possible requires some ingenuity.
 
