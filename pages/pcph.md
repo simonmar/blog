@@ -12,9 +12,17 @@ tags: []
 
 The book was published in August 2013 by O'Reilly Media.
 
+Unfortunately the online copy of the book is temporarily unavailable
+as O'Reilly have deprecated the platform that was hosting it.  I hope
+to get the content back up in some form in the future, in the meantime
+you can find it on <a
+href="https://web.archive.org/web/20180117182938/http://chimera.labs.oreilly.com/books/1230000000929/index.html">archive.org</a>.
+
+<!--
 <a
 href="http://chimera.labs.oreilly.com/books/1230000000929/index.html">Read
 the book online</a></p>
+-->
 
 ## Where to buy
 
