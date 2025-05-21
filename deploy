@@ -4,5 +4,6 @@
 #SITE=`echo .stack-work/install/*/*/*/bin/site`
 #SITE=./dist/build/site/site
 #$SITE build
-stack exec site -- rebuild
+#stack exec site -- rebuild
+cabal run site -- rebuild
 rsync -av _site/* ../simonmar.github.io/
