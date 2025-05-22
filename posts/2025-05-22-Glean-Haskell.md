@@ -8,7 +8,7 @@ tags: [glean]
 
 I thought it might be fun to try to use Glean to index as much of
 Hackage as I could, and then do some rough comparisons against <a
-href="">hiedb</a> and also play around to see what interesting queries
+href="https://github.com/wz1000/HieDb">hiedb</a> and also play around to see what interesting queries
 we could run against a database of all the code in Hackage.
 
 This project was mostly just for fun: Glean is not going to replace
