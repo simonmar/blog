@@ -31,9 +31,10 @@ more progress on the indexer:
   constructors, fields and class methods, and made indexing more
   efficient.
 
-The DB size including types is now about **1GB**, and it takes **just
-under 10 minutes** on my 9-year-old laptop to index the nearly 3000
-packages in my stackage LTS 21.21 snapshot.
+The DB size including types is now about **850MB**, and it takes
+**just under 8 minutes** on my 9-year-old laptop to index the nearly
+3000 packages in my stackage LTS 21.21 snapshot. (Note: the figures
+here were updated on 12-06-2025 when I redid the measurments).
 
 ## Hooking it up to VS Code
 
